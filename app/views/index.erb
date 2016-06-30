@@ -1,0 +1,12 @@
+<% @allposts.each do |postobject| %>
+     <p> <%= postobject.name %> </p>
+     <p> <%= postobject.content %> </p>
+     <br>
+<% end %>
+
+
+
+     <% if @deleted != nil %>
+        <p>  <%="#{@deleted.name} was deleted" %> </p>
+     <%  end %>
+
